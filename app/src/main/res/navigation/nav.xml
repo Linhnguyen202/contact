@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.contactapp.ui.fragment.home.HomeScreen"
+        android:label="HomeScreen" >
+        <action
+            android:id="@+id/action_homeScreen_to_addScreen"
+            app:destination="@id/addScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_detailScreen"
+            app:destination="@id/detailScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/addScreen"
+        android:name="com.example.contactapp.ui.fragment.add.AddScreen"
+        android:label="AddScreen" >
+        <argument
+            android:name="userModel"
+            app:argType="com.example.contactapp.model.ContactModel"
+            app:nullable="true" />
+        <argument
+            android:name="ScreenType"
+            app:argType="com.example.contactapp.ui.fragment.add.ScreenType" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailScreen"
+        android:name="com.example.contactapp.ui.fragment.detail.DetailScreen"
+        android:label="DetailScreen" >
+        <argument
+            android:name="UserModel"
+            app:argType="com.example.contactapp.model.ContactModel" />
+        <action
+            android:id="@+id/action_detailScreen_to_addScreen"
+            app:destination="@id/addScreen" />
+    </fragment>
+</navigation>

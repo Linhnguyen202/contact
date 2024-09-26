@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ContactApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="menu">Menu</string>
+    <string name="add_action">Add Action</string>
+    <string name="this_is_an_avatar">this is an avatar</string>
+    <string name="click_open_camera">click open camera</string>
+    <string name="username">Username</string>
+    <string name="phone_number">Phone Number</string>
+</resources>
